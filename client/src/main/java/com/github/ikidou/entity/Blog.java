@@ -19,6 +19,15 @@ public class Blog {
 	@SerializedName("content")
 	public String content;
 	
+	public Blog() {
+	}
+	
+	public Blog(String author, String title, String content) {
+		this.author = author;
+		this.title = title;
+		this.content = content;
+	}
+	
 	@Override
 	public String toString() {
 		return "Blog{" +
